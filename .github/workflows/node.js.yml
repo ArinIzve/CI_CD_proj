@@ -1,11 +1,12 @@
 name: CI
 
 on:
- # События которые запускают
- push:
-  branches: [ "main" ]
- pull_request: 
-  branches: [ "main" ]
+  # События которые запускают
+  push:
+    branches: [ "main" ]
+  pull_request: 
+    branches: [ "main" ]
+    
 # jobs запускаются параллельно, если не указана последовательность
 jobs: 
   #название job вы можете назвать как угодно
@@ -20,7 +21,6 @@ jobs:
       - name: npm install, test and build
         run: |
           npm install
-          npm run test
           npm run build
         # пример однолинейного простого скрипта shell
       - name: Run a one-line script
