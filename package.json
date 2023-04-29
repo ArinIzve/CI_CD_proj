@@ -1,4 +1,4 @@
 {
   "main": "./js/script.js",
-  "scripts": {"build": "njde ./js/script.js"}
+  "scripts" : {"build": "njde ./js/script.js"}
 }
